@@ -1,4 +1,5 @@
 orthographe	phonetique
+amina	amina
 A7	asEt
 ABB	abebe
 ABCD	abesede
