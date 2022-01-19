@@ -19,7 +19,7 @@ appendInfoLine: "frequency :",frequency
 @text_grid: "Logatomes.textGrid"
 
 
-########################### 
+###########################
 
 text$ = "la vieille porte le masque et amina l'apporte"
 
@@ -38,7 +38,7 @@ prosodie$ = transcript_phonetic.result$
 index_prosodie_min = index (sentence$, prosodie$)
 index_prosodie_max = index_prosodie_min + length(prosodie$)-2
 
-appendInfoLine: "prosodie$: ", prosodie$, " - index:", index_prosodie_min  ,"|",index_prosodie_max 
+#appendInfoLine: "prosodie$: ", prosodie$, " - index:", index_prosodie_min  ,"|",index_prosodie_max 
 
 
 
@@ -49,7 +49,7 @@ nb_phonemes = length(sentence$)
 
 for index from 1 to nb_phonemes-1
 	diphone$ = mid$(sentence$,index,2)
-	appendInfoLine: "diphone$:",diphone$, " - time_min=",text_grid.time_min [diphone$]," - time_max=",text_grid.time_max [diphone$]
+	#appendInfoLine: "diphone$:",diphone$, " - time_min=",text_grid.time_min [diphone$]," - time_max=",text_grid.time_max [diphone$]
 
 
 
@@ -65,21 +65,13 @@ for index from 1 to nb_phonemes-1
 	sound_synthese = Concatenate
 
 	if (index = index_prosodie_min) 
-		appendInfoLine: "------------------", diphone$
 		prosodie_time_start = Get total duration
-		
 		delta = text_grid.time_max [diphone$] - text_grid.time_min [diphone$]
-
 		prosodie_time_start = prosodie_time_start - delta 
-		
-		appendInfoLine: "Time duration", prosodie_time_start
 	endif
 
 	if (index = index_prosodie_max)
-		appendInfoLine: "------------------", diphone$
 		prosodie_time_end = Get total duration
-		appendInfoLine: "Time duration", prosodie_time_end 
-
 	endif
 
 	#netoyage 
