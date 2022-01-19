@@ -1,5 +1,6 @@
 orthographe	phonetique
 amina	amina
+l'apporte	lapORt
 A7	asEt
 ABB	abebe
 ABCD	abesede
