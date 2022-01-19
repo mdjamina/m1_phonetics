@@ -6,19 +6,20 @@ nocheck Remove
 
 ##########################
 
+
 dico = Read Table from tab-separated file: "dico2.txt"
 
-sound = Read from file: "amina.wav"
+sound = Read from file: "Logatomes.wav"
 
-select 'sound'
+select 'sound' 
 frequency = Get sampling frequency
 
 appendInfoLine: "frequency :",frequency 
 
-@text_grid: "amina.textGrid"
+@text_grid: "Logatomes.textGrid"
 
 
-###########################
+########################### 
 
 text$ = "la vieille porte le masque et amina l'apporte"
 
