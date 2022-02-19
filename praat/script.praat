@@ -7,16 +7,16 @@ nocheck Remove
 ##########################
 
 
-dico = Read Table from tab-separated file: "dico2.txt"
+dico = Read Table from tab-separated file: "./input/dico2.txt"
 
-sound = Read from file: "Logatomes.wav"
+sound = Read from file: "./input/Logatomes.wav"
 
 select 'sound' 
 frequency = Get sampling frequency
 
 appendInfoLine: "frequency :",frequency 
 
-@text_grid: "Logatomes.textGrid"
+@text_grid: "./input/Logatomes.textGrid"
 
 
 ###########################
@@ -89,7 +89,7 @@ select 'sound_synthese'
 Rename: "son synthese"
 
 Play
-Save as WAV file: "son_synthese.wav"
+Save as WAV file: "./output/son_synthese.wav"
 
 
 
