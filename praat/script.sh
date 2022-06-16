@@ -41,6 +41,6 @@ fi
 
 
 
+PLAY_SOUND=0
 
-
-praat --run script_synth_auto.praat $TEXTGRID $SOUND $DICO
+praat --run script_synth_auto.praat $TEXTGRID $SOUND $DICO $PLAY_SOUND
